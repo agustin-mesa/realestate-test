@@ -16,7 +16,12 @@
   --color-v1-secondary-900: #100a55;
 
   --color-v1-background: #FFFFFF;
+
+  --breakpoint-3xl: 1900px;
 }
+
+
+
 
 
 * {
