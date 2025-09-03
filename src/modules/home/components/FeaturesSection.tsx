@@ -1,14 +1,9 @@
 import UiButton from '@/shared/components/ui/UiButton';
 import UiText from '@/shared/components/ui/UiText';
-import { FeatureData } from '@/modules/home/types';
 import Image from 'next/image';
-import FeatureCard from './FeatureCard';
+import FeatureCard from '@/modules/home/components/FeatureCard';
 
-interface FeaturesSectionProps {
-	features?: FeatureData[];
-}
-
-const defaultFeatures: FeatureData[] = [
+const defaultFeatures = [
 	{
 		icon: '/assets/images/resources/insurance.svg',
 		title: 'Property Insurance',
@@ -35,9 +30,9 @@ const defaultFeatures: FeatureData[] = [
 	}
 ];
 
-const FeaturesSection = ({ features = defaultFeatures }: FeaturesSectionProps) => {
-	const leftColumnFeatures = features.slice(0, 2);
-	const rightColumnFeatures = features.slice(2);
+const FeaturesSection = () => {
+	const leftColumnFeatures = defaultFeatures.slice(0, 2);
+	const rightColumnFeatures = defaultFeatures.slice(2);
 
 	return (
 		<div className="mx-auto grid max-w-screen-xl grid-cols-3 gap-16 px-10 py-20">
@@ -69,13 +64,23 @@ const FeaturesSection = ({ features = defaultFeatures }: FeaturesSectionProps) =
 
 			<div className="flex flex-col gap-20">
 				{leftColumnFeatures.map((feature, index) => (
-					<FeatureCard key={index} feature={feature} />
+					<FeatureCard
+						key={index}
+						description={feature.description}
+						icon={feature.icon}
+						title={feature.title}
+					/>
 				))}
 			</div>
 
 			<div className="flex flex-col gap-20">
 				{rightColumnFeatures.map((feature, index) => (
-					<FeatureCard key={index} feature={feature} />
+					<FeatureCard
+						key={index}
+						description={feature.description}
+						icon={feature.icon}
+						title={feature.title}
+					/>
 				))}
 			</div>
 		</div>

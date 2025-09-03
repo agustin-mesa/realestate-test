@@ -1,17 +1,11 @@
 import UiText from '@/shared/components/ui/UiText';
-import { StatsData, TestimonialData } from '@/modules/home/types';
 import Image from 'next/image';
 import PropertySearchTabs from '@/modules/property-search/components/PropertySearchTabs';
-import StatsSection from './StatsSection';
-import TestimonialCard from './TestimonialCard';
-import TrustpilotCard from './TrustpilotCard';
+import StatsSection from '@/modules/home/components/StatsSection';
+import TestimonialCard from '@/modules/home/components/TestimonialCard';
+import TrustpilotCard from '@/modules/home/components/TrustpilotCard';
 
-interface HeroSectionProps {
-	testimonial?: TestimonialData;
-	stats?: StatsData[];
-}
-
-const HeroSection = ({ testimonial, stats }: HeroSectionProps) => {
+const HeroSection = () => {
 	return (
 		<main className="bg-v1-background h-dvh">
 			<div className="from-v1-primary-50 to-v1-primary-50/0 mx-auto flex h-dvh bg-gradient-to-b pt-32">
@@ -29,11 +23,11 @@ const HeroSection = ({ testimonial, stats }: HeroSectionProps) => {
 							<PropertySearchTabs />
 						</div>
 
-						<StatsSection stats={stats} />
+						<StatsSection />
 					</div>
 
 					<div className="relative flex flex-1 justify-end overflow-hidden">
-						<TestimonialCard testimonial={testimonial} />
+						<TestimonialCard />
 						<Image
 							src="/assets/images/hero-bg.png"
 							alt="Hero"

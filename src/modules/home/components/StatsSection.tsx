@@ -1,12 +1,7 @@
 import UiText from '@/shared/components/ui/UiText';
-import { StatsData } from '@/modules/home/types';
 import Image from 'next/image';
 
-interface StatsSectionProps {
-	stats?: StatsData[];
-}
-
-const defaultStats: StatsData[] = [
+const defaultStats = [
 	{
 		icon: '/assets/images/resources/renters.svg',
 		value: '50k+ renters',
@@ -19,10 +14,10 @@ const defaultStats: StatsData[] = [
 	}
 ];
 
-const StatsSection = ({ stats = defaultStats }: StatsSectionProps) => {
+const StatsSection = () => {
 	return (
 		<div className="flex max-w-lg gap-4">
-			{stats.map((stat, index) => (
+			{defaultStats.map((stat, index) => (
 				<div key={index} className="flex flex-1 flex-col gap-4">
 					<Image
 						src={stat.icon}
