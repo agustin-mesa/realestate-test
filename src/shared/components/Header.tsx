@@ -15,10 +15,11 @@ const Header = () => {
 					<div className="flex items-center justify-between gap-14">
 						<Image
 							src="/assets/logo/logo-estatery.svg"
-							alt="Estatery"
+							alt="Estatery - Real Estate Platform Logo"
 							width={120}
 							height={120}
 							draggable={false}
+							priority
 						/>
 
 						<ul className="flex items-center gap-10">
