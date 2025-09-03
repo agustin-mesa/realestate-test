@@ -35,7 +35,7 @@ const FeaturesSection = () => {
 	const rightColumnFeatures = defaultFeatures.slice(2);
 
 	return (
-		<div className="mx-auto grid max-w-screen-xl grid-cols-3 gap-16 px-10 py-20">
+		<div className="mx-auto grid max-w-screen-xl grid-cols-3 gap-16 px-8 py-20">
 			<div className="bg-v1-neutral-25 border-v1-primary-500/10 relative flex flex-1 flex-col gap-4 rounded-lg border-2 p-8">
 				<div className="z-10 flex flex-col gap-4">
 					<UiText type="h3" className="text-v1-secondary-900 text-3xl font-bold">

@@ -9,7 +9,7 @@ const Header = () => {
 	const { navigationItems } = useNavigation();
 
 	return (
-		<header className="bg-v1-neutral-0/40 fixed top-0 right-0 left-0 z-50 px-4 backdrop-blur-md max-md:px-6">
+		<header className="bg-v1-neutral-0/40 fixed top-0 right-0 left-0 z-50 px-10 backdrop-blur-md max-md:px-6">
 			<nav className="py-6">
 				<div className="mx-auto flex max-w-screen-2xl items-center justify-between">
 					<div className="flex items-center justify-between gap-14">

@@ -8,9 +8,9 @@ import TrustpilotCard from '@/modules/home/components/TrustpilotCard';
 const HeroSection = () => {
 	return (
 		<main className="bg-v1-background h-dvh">
-			<div className="from-v1-primary-50 to-v1-primary-50/0 mx-auto flex h-dvh bg-gradient-to-b pt-32">
-				<div className="mx-auto flex max-w-screen-xl">
-					<div className="z-10 flex max-w-xl flex-1 flex-col gap-10 pt-10 pl-10">
+			<div className="from-v1-primary-50 to-v1-primary-50/0 ml-auto flex h-dvh bg-gradient-to-b pt-32">
+				<div className="max-w-screen-3xl ml-auto flex">
+					<div className="z-10 flex max-w-2xl flex-1 flex-col gap-10 pt-10 pl-26">
 						<UiText type="display1" className="max-w-lg text-6xl">
 							Buy, rent, or sell your property easily
 						</UiText>
@@ -26,14 +26,14 @@ const HeroSection = () => {
 						<StatsSection />
 					</div>
 
-					<div className="relative flex flex-1 justify-end overflow-hidden">
+					<div className="relative flex flex-1 justify-end">
 						<TestimonialCard />
 						<Image
 							src="/assets/images/hero-bg.png"
 							alt="Hero"
 							width={1000}
 							height={1000}
-							className="object-cover"
+							className="object-cover object-left"
 							draggable={false}
 						/>
 						<TrustpilotCard />
