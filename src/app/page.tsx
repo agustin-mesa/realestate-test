@@ -22,6 +22,7 @@ export default function Home() {
 								alt="Logo"
 								width={120}
 								height={120}
+								draggable={false}
 							/>
 
 							<ul className="flex items-center gap-10">
@@ -60,7 +61,7 @@ export default function Home() {
 			<main className="bg-v1-background h-dvh">
 				<div className="from-v1-primary-50 to-v1-primary-50/0 mx-auto flex h-dvh bg-gradient-to-b pt-32">
 					<div className="mx-auto flex max-w-screen-xl">
-						<div className="z-10 flex max-w-2xl flex-1 flex-col gap-10 pt-10 pl-10">
+						<div className="z-10 flex max-w-xl flex-1 flex-col gap-10 pt-10 pl-10">
 							<UiText type="display1" className="max-w-lg text-6xl">
 								Buy, rent, or sell your property easily
 							</UiText>
@@ -194,6 +195,7 @@ export default function Home() {
 										alt="Renters"
 										width={64}
 										height={64}
+										draggable={false}
 									/>
 									<div className="flex flex-col">
 										<UiText type="h4" className="text-v1-primary-500 font-bold">
@@ -210,6 +212,7 @@ export default function Home() {
 										alt="Properties"
 										width={64}
 										height={64}
+										draggable={false}
 									/>
 									<div className="flex flex-col">
 										<UiText type="h4" className="text-v1-primary-500 font-bold">
@@ -223,7 +226,7 @@ export default function Home() {
 							</div>
 						</div>
 
-						<div className="relative -ml-20 flex flex-1 justify-end overflow-hidden">
+						<div className="relative flex flex-1 justify-end overflow-hidden">
 							<div className="bg-v1-neutral-0 absolute top-0 left-0 flex max-w-xs flex-col gap-6 rounded-lg p-6">
 								<div className="flex gap-4">
 									<div className="flex flex-col">
@@ -232,6 +235,7 @@ export default function Home() {
 											alt="User"
 											width={68}
 											height={68}
+											draggable={false}
 										/>
 									</div>
 									<div className="flex flex-col gap-2">
@@ -255,6 +259,7 @@ export default function Home() {
 												alt="Home"
 												width={80}
 												height={80}
+												draggable={false}
 											/>
 										</div>
 									</div>
@@ -295,6 +300,7 @@ export default function Home() {
 								width={1000}
 								height={1000}
 								className="object-cover"
+								draggable={false}
 							/>
 							<div className="absolute right-0 bottom-0 flex min-w-64 flex-col gap-4 overflow-hidden rounded-tl-lg bg-[url('/assets/images/mask-card.png')] bg-cover bg-center p-4 pb-6">
 								<div className="flex items-center justify-between">
@@ -309,6 +315,7 @@ export default function Home() {
 										alt="Home"
 										width={80}
 										height={80}
+										draggable={false}
 									/>
 								</div>
 								<div className="flex items-center gap-1">
@@ -347,6 +354,7 @@ export default function Home() {
 							alt="House"
 							width={350}
 							height={350}
+							draggable={false}
 						/>
 					</div>
 				</div>
@@ -357,6 +365,7 @@ export default function Home() {
 							alt="Insurance"
 							width={64}
 							height={64}
+							draggable={false}
 						/>
 						<UiText type="h4" className="text-2xl font-bold">
 							Property Insurance
@@ -375,6 +384,7 @@ export default function Home() {
 							alt="Commission"
 							width={64}
 							height={64}
+							draggable={false}
 						/>
 						<UiText type="h4" className="text-2xl font-bold">
 							Lowest Commission
@@ -395,6 +405,7 @@ export default function Home() {
 							alt="Price"
 							width={64}
 							height={64}
+							draggable={false}
 						/>
 						<UiText type="h4" className="text-2xl font-bold">
 							Best Price
@@ -413,6 +424,7 @@ export default function Home() {
 							alt="Overall"
 							width={64}
 							height={64}
+							draggable={false}
 						/>
 						<UiText type="h4" className="text-2xl font-bold">
 							Overall Control
