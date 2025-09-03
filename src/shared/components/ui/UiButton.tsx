@@ -1,4 +1,4 @@
-import { helpers } from '@/utils/helpers';
+import { helpers } from '@/shared/utils/helpers';
 import { Button, type ButtonProps } from 'primereact/button';
 
 const variants = {

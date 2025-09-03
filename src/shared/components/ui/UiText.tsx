@@ -1,4 +1,4 @@
-import { helpers } from '@/utils/helpers';
+import { helpers } from '@/shared/utils/helpers';
 import React from 'react';
 
 export type UiTextProps = {

@@ -1,0 +1,53 @@
+import UiText from '@/shared/components/ui/UiText';
+import { StatsData, TestimonialData } from '@/modules/home/types';
+import Image from 'next/image';
+import PropertySearchTabs from '@/modules/property-search/components/PropertySearchTabs';
+import StatsSection from './StatsSection';
+import TestimonialCard from './TestimonialCard';
+import TrustpilotCard from './TrustpilotCard';
+
+interface HeroSectionProps {
+	testimonial?: TestimonialData;
+	stats?: StatsData[];
+}
+
+const HeroSection = ({ testimonial, stats }: HeroSectionProps) => {
+	return (
+		<main className="bg-v1-background h-dvh">
+			<div className="from-v1-primary-50 to-v1-primary-50/0 mx-auto flex h-dvh bg-gradient-to-b pt-32">
+				<div className="mx-auto flex max-w-screen-xl">
+					<div className="z-10 flex max-w-xl flex-1 flex-col gap-10 pt-10 pl-10">
+						<UiText type="display1" className="max-w-lg text-6xl">
+							Buy, rent, or sell your property easily
+						</UiText>
+						<UiText type="h4" className="max-w-lg font-medium">
+							A great platform to buy, sell, or even rent your properties without any
+							commisions.
+						</UiText>
+
+						<div className="flex gap-4">
+							<PropertySearchTabs />
+						</div>
+
+						<StatsSection stats={stats} />
+					</div>
+
+					<div className="relative flex flex-1 justify-end overflow-hidden">
+						<TestimonialCard testimonial={testimonial} />
+						<Image
+							src="/assets/images/hero-bg.png"
+							alt="Hero"
+							width={1000}
+							height={1000}
+							className="object-cover"
+							draggable={false}
+						/>
+						<TrustpilotCard />
+					</div>
+				</div>
+			</div>
+		</main>
+	);
+};
+
+export default HeroSection;
