@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 export interface SearchFormData {
 	location: string;
 	moveInDate: Date | null;
@@ -6,5 +8,5 @@ export interface SearchFormData {
 
 export interface TabItem {
 	header: string;
-	content: React.ReactNode;
+	content: ReactNode;
 }
